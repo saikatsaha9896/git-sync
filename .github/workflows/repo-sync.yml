@@ -8,10 +8,10 @@ jobs:
     - name: repo-sync
       uses: wei/git-sync@v1.1.2
       env:
-        SOURCE_REPO: "https://aaabddcbc4ee4cfac71a617fa2e5e81599ba2bd3@github.com/saikatsaha9896/git-sync.git"
-        SOURCE_BRANCH: "develop"
-        DESTINATION_REPO: "https://aaabddcbc4ee4cfac71a617fa2e5e81599ba2bd3@github.com/saikatsaha9896/Sample.git"
-        DESTINATION_BRANCH: "master"
+        SOURCE_REPO: "https://aaabddcbc4ee4cfac71a617fa2e5e81599ba2bd3@github.com/saikatsaha9896/Sample.git"
+        SOURCE_BRANCH: "master"
+        DESTINATION_REPO: "https://aaabddcbc4ee4cfac71a617fa2e5e81599ba2bd3@github.com/saikatsaha9896/git-sync.git"
+        DESTINATION_BRANCH: "develop"
         #SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       with:
         args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
