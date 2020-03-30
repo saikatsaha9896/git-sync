@@ -5,13 +5,24 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
+    #- name: repo-sync
+    #  uses: wei/git-sync@v1
+    #  env:
+    #    SOURCE_REPO: "https://saikatsaha9896:aaabddcbc4ee4cfac71a617fa2e5e81599ba2bd3@github.com/saikatsaha9896/Sample.git"
+    #    SOURCE_BRANCH: "master"
+    #    DESTINATION_REPO: "https://saikatsaha9896:aaabddcbc4ee4cfac71a617fa2e5e81599ba2bd3@github.com/saikatsaha9896/git-sync.git"
+    #    DESTINATION_BRANCH: "master"
+    #    #SSH_PRIVATE_KEY: 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
+
+
+    - uses: actions/checkout@master
     - name: repo-sync
-      uses: wei/git-sync@v1.1.2
-      env:
-        SOURCE_REPO: "https://aaabddcbc4ee4cfac71a617fa2e5e81599ba2bd3@github.com/saikatsaha9896/Sample.git"
-        SOURCE_BRANCH: "master"
-        DESTINATION_REPO: "https://aaabddcbc4ee4cfac71a617fa2e5e81599ba2bd3@github.com/saikatsaha9896/git-sync.git"
-        DESTINATION_BRANCH: "develop"
-        #SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      uses: repo-sync/github-sync@v2
       with:
-        args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
+        source_repo: "https://aaabddcbc4ee4cfac71a617fa2e5e81599ba2bd3@github.com/saikatsaha9896/Sample.git"
+        source_branch: "master"
+        destination_branch: "develop"
+        github_token: aaabddcbc4ee4cfac71a617fa2e5e81599ba2bd3
+
+      #with:
+      #  args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
