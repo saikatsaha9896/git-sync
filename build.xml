@@ -1,4 +1,5 @@
 <project name="Sample Ant build" basedir=".">
+	<!-- sample master -->
 	<!-- ========== Initialize Properties =================================== -->
 	<!-- set global properties for build -->
 	<property name="basedir" value="." />
