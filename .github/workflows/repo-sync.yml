@@ -19,7 +19,7 @@ jobs:
     - name: repo-sync
       uses: repo-sync/github-sync@v2
       with:
-        source_repo: "https://761193:7s4l7uklah7mnirdxb7o2itxiaaoknuupoyfywegpfemy2knosta@dev.azure.com/761193/Demo3/_git/Demo3"
+        source_repo: "https://aaabddcbc4ee4cfac71a617fa2e5e81599ba2bd3@github.com/saikatsaha9896/Sample.git"
         source_branch: "master"
         destination_branch: "develop"
         github_token: aaabddcbc4ee4cfac71a617fa2e5e81599ba2bd3
